@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<title>大明的智慧东西</title>
+<meta charset="utf-8">
+<link rel="icon" href="image/favicon.ico" type="image/x-icon" />
+<meta name="viewport" content="width=device-width">
+<link rel="stylesheet" href="css/main.css"/>
+<link rel="stylesheet" href="https://cdn.w3cbus.com/library/mdui/1.0.2/css/mdui.min.css"/>
+<script>
+        function show_time() {
+            var time=new Date();
+            var year=time.getFullYear();
+            var month=time.getMonth()+1;
+            var day=time.getDate();
+            var hour=time.getHours();
+            var min=time.getMinutes();
+            var sec=time.getSeconds();
+            document.getElementById("myclock").innerHTML="<h3>现在时间：*"+year+"-"+month+"-"+day+"*&nbsp;&nbsp;" +hour+":"+min+":"+sec;
+        }
+        //serInterval:以相同的时间间隔执行某个操作
+        setInterval("show_time()",1000);
+    </script>
+</head>
+<body>
+<canvas id="canvas"></canvas>
+<script src="js/bg/bg.js"></script>
+<div class="bd">
+<h2>开发进度</h2>
+<p> </p>
+<div class="mdui-typo">
+      <blockquote>
+        <p>无论走到哪里，都应该记住，过去都是假的，回忆是一条没有尽头的路，一切以往的春天都不复存在，就连那最坚韧而又狂乱的爱情归根结底也不过是一种转瞬即逝的现实。</p>
+        <footer>马尔克斯 ——《百年孤独》</footer>
+        <s style="color: gray;">《论我把他引用出来有什么用》</s>
+      </blockquote>
+    </div>
+<div class="rg">
+<div style="float:left;" id="myclock">
+
+</div>
+</div>
+<div style="padding:20px">
+<div class="box1">
+<h3>网站开发进度</h3>
+<p>每天更新一次，你可以在这里看到当天的进度</p>
+<p>&nbsp;目前进度：5%&nbsp;上一次更新时间：2022.03.29&nbsp;13:09</p>
+<p>进度条：</p>
+<div class="mdui-container mdui-p-t-5">
+    <div class="mdui-progress">
+      <div class="mdui-progress-determinate" style="width: 5%;"></div>
+    </div>
+  </div>
+<p>p.s.:现在还有点简陋，等到做出雏形来再展示图片</p>
+</div>
+</div>
+</div>
+</body>
+<script src="https://cdn.w3cbus.com/library/mdui/1.0.2/js/mdui.min.js"></script>
+</html>

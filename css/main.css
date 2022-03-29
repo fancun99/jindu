@@ -1,0 +1,46 @@
+body{
+background-color: rgba(73, 73, 73, 0.767);
+padding: 100px;
+}
+.bd/*内部嵌套*/{
+background-color: rgba(255, 255, 255, 0.438);
+width:auto;
+height:1000px;
+padding: 20px;
+box-shadow:0px 0px 5px;
+border-radius: 3px;
+}
+.rg{
+width:auto;
+height:auto;
+padding:20px;
+float: right;
+}
+h1,h2,h3,p,a{
+color:gray;
+}
+.input{
+width:320px;
+height:30px;
+border-radius: 3px;
+}
+.btn{
+width:80px;
+height:40px;
+line-height: 50%;
+border-radius: 3px;
+}
+.box1{
+width:400px;
+height:200px;
+padding: 20px;
+}
+#canvas{
+  position:absolute;
+  left: -0px;
+  top: 58px;
+  height: 1500px;
+  z-index:-2;
+  width: 100%;
+}
+ 
